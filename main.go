@@ -73,7 +73,7 @@ func generateBlog(blogDest string) {
 	tmpl := template.Must(template.ParseFiles("./templates/blog.html"))
 	_, file := filepath.Split(blogDest)
 	file = strings.TrimSuffix(file, filepath.Ext(blogDest))
-	file = fmt.Sprintf("serve/blogs/%s.html", file)
+	file = fmt.Sprintf("./serve/blogs/%s.html", file)
 	f, err := os.Create(file)
 	check(err)
 	tmpl.Execute(f, parseBlogFile(blogDest))

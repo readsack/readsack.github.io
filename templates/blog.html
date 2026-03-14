@@ -30,7 +30,7 @@ body {
     width: 60vw;
     height: 60vh;
     overflow: scroll;
-    scrollbar-width: 0px;  
+    scrollbar-width: none;  
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -45,6 +45,9 @@ body {
 
 a{
     color: yellow
+}
+::-webkit-scrollbar{
+    width: 0;
 }
 
 a:link{color:inherit}
