@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(15,15,15);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Pixelify Sans";
+    cursor: crosshair;
+    user-select: none;
+}
+
+.frame {
+    /*border: 3px solid grey;*/
+    width: 60vw;
+    height: 60vh;
+    overflow: scroll;
+    scrollbar-width: 2px;  
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.chips{
+    display: flex;
+    height: min-content;
+}
+
+.tabs{
+    display: flex;
+    border: 3px solid rgb(200, 200, 200);
+    height: calc(100% - 30px - 1ch);
+}
+
+.tab{
+    display: none;
+}
+
+[data-current] {
+    display: block;
+}
+
+.chip {
+    margin: 0px;
+    padding: 0 10px;
+}
+
+[data-selected] {
+    background-color: yellow;
+    color: black;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+
