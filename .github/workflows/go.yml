@@ -33,6 +33,11 @@ jobs:
           mkdir ./serve/blogs
           chmod +x ./app
           ./app
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./serve
   deploy:
     needs: build-and-run
     runs-on: ubuntu-latest
