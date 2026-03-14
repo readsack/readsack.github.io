@@ -15,6 +15,12 @@ window.addEventListener("DOMContentLoaded", () => {
         chips.push(chip)
         
     });
+    let blogs = document.querySelectorAll("[data-click]")
+    blogs.forEach(blog => {
+        blog.addEventListener("click", e => {
+            window.location.href = "/blogs/" + blog.getAttribute("data-click")
+        })
+    })
     console.log(chips)
     let updateTabs = () => {
         tabs.forEach((tab, i) => {

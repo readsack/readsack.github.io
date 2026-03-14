@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>readsack writes</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(15,15,15);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Pixelify Sans";
+    cursor: crosshair;
+    user-select: none;
+}
+.yellow{
+    color: yellow;
+    display: inline-block;
+}
+.frame {
+    border: 3px solid rgb(200, 200, 200);
+    width: 60vw;
+    height: 60vh;
+    overflow: scroll;
+    scrollbar-width: 0px;  
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.date{
+    font-size: 20px;
+}
+
+.title{
+    font-size: 50px;
+}
+
+a{
+    color: yellow
+}
+
+a:link{color:inherit}
+a:active{color:inherit}
+a:visited{color:inherit}
+a:hover{color:inherit}
+
+
+@media (max-width: 576px) {
+  .frame{
+    width: 90vw;
+    height: 90vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .frame{
+    width: 80vw;
+    height: 80vh;
+  }
+}
+
+</style>
+<body>
+    
+    
+    <div class="frame">
+        <div class="yellow"><a href="/" class="yellow"><- Go back</a></div>
+        <div class="title">{{.BlogTitle}}</div>
+        <div class="date yellow">{{.Date}}</div>
+        <div class="content">
+        {{.Content}}
+        </div>
+    </div>
+</body>
+
+</html>
