@@ -30,6 +30,7 @@ jobs:
 
       - name: Run executable
         run: |
+          mkdir ./serve/blogs
           chmod +x ./app
           ./app
   deploy:
