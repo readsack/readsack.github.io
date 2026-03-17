@@ -24,6 +24,6 @@ The absurd man, is the one who first glimpses the Absurd, and chooses the third 
 
 **Living In Revolt:** The absurd man always lives in revolt against the Absurdity of the universe. This revolt is in the act of continuing to live, better and joyful, in spite of the meaninglessness of the world.
 
-**Fundamental Freedom:** The absurd man is fundamentally free. He acts with indifference towards values or the notion of 'good/bad'. He simply lives in the moment, only perceiving what is tangible to himself.
+**Fundamental Freedom:** The absurd man is fundamentally free. He isn't bound by the constraints of ethics or traditional morality, nor is he weighed down by the past regrets or future concerns.
 
 **Living With Passion:** The absurd man thrives on living more and more. It's not about his experiences being good or bad, rather, it's about the sheer quantity of his experiences and being completely in the moment while experiencing them.
